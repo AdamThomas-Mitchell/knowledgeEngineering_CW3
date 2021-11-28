@@ -1,0 +1,1688 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ConceptOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ConceptOf"/>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ConceptOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasConcept"/>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasConcept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasConcept"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#RequiresEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Country"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#RequiresEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#RequiresEquipment"/>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ConceptOf"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleRequiresEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleRequiresEquipment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#RequiresEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#AverageTimeToBlackBelt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#AverageTimeToBlackBelt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradedMartialArt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NumberOfGyms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NumberOfGyms">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_Gloves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_Gloves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#England"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Brazil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Brazil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JiuJitsu_MartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Brazil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu_Belt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu_Belt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Clothing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Clothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Country">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#EasternMartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#EasternMartialArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Country"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#England -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#England">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Handwrap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#France -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#France">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Clothing"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi_BJJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi_BJJ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoGi_BJJ"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradedMartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradedMartialArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#AverageTimeToBlackBelt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GrapplingArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GrapplingArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Handwrap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Handwrap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Head_Striking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Head_Striking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HybridArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HybridArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Hybrid_Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Hybrid_Style">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HybridArt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Japan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Japan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JiuJitsu_MartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Japan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu_Belt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu_Belt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JiuJitsu_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JiuJitsu_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_Belt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_Belt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Japan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_Gloves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_Gloves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Kickboxing_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Kickboxing_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ShinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Japan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Korea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Korea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_Gloves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_Gloves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ShinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#USA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NumberOfGyms"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MouthGuard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MouthGuard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MuayThai_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MuayThai_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ShinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Thailand"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoGi_BJJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoGi_BJJ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Russia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Russia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Sambo_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Sambo_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Head_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Russia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Head_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ShinGuard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ShinGuard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_MartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Japan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan_Belt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan_Belt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StrikingArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StrikingArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Handwrap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MouthGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Striking_Style">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#StyleRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MouthGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Belt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Belt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Gloves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Gloves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BeltSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArtRequiresEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Gloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Korea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Thailand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Thailand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Eastern_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ThrowingArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ThrowingArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Throwing_Style">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#USA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#USA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#UngradedMartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#UngradedMartialArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#WesternMartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#WesternMartialArt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Western_Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Country"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Wrestling_MartialArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Wrestling_MartialArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NamedMartialArt"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasGradingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#OriginatesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HasStyle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Grappling_Style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BJJ_GI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BJJ_GI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gi_BJJ"/>
+        <AverageTimeToBlackBelt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</AverageTimeToBlackBelt>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BJJ_NOGI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BJJ_NOGI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#NoGi_BJJ"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_MartialArt"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JJJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JJJ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu"/>
+        <AverageTimeToBlackBelt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AverageTimeToBlackBelt>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_MartialArt"/>
+        <AverageTimeToBlackBelt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AverageTimeToBlackBelt>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Kickboxing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Kickboxing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Kickboxing_MartialArt"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_MartialArt"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MuayThai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MuayThai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MuayThai_MartialArt"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Sambo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Sambo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Sambo_MartialArt"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan"/>
+        <AverageTimeToBlackBelt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AverageTimeToBlackBelt>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_MartialArt"/>
+        <AverageTimeToBlackBelt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AverageTimeToBlackBelt>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Wrestling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Wrestling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Wrestling_MartialArt"/>
+        <NumberOfGyms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</NumberOfGyms>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_Gloves"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_Gloves"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_Gloves"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Gloves"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Boxing_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JiuJitsu_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Karate_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Kickboxing_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MMA_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MuayThai_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Sambo_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Wrestling_MartialArt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Brazil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#England"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#France"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#USA"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#BrazilianJiuJitsu_Belt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#JapaneseJiuJitsu_Belt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Judo_Belt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Shotokan_Belt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Taekwondo_Belt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Clothing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Gloves"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Protective"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Elbow_Striking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Fist_Striking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Head_Striking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Knee_Striking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Leg_Striking"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Equipment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GradingSystem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MartialArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Style"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#GroinGuard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#Handwrap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#HeadGear"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#MouthGuard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adamthomas-mitchell/ontologies/2021/10/untitled-ontology-9#ShinGuard"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
